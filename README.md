@@ -7,7 +7,7 @@ First, open up a terminal and go to the root directory of the application (where
 
 ## Step B: Setting up Login Functionality
 
-# JWT authentication is something I would plan to implement in the future, for reference
+JWT authentication is something I would plan to implement in the future, for reference
 
 1. Go to firebase.google.com.
 2. Click "Go to Console".
