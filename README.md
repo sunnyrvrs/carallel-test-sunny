@@ -7,6 +7,8 @@ First, open up a terminal and go to the root directory of the application (where
 
 ## Step B: Setting up Login Functionality
 
+# JWT authentication is something I would plan to implement in the future, for reference
+
 1. Go to firebase.google.com.
 2. Click "Go to Console".
 3. Add project + and enter in a project name.
@@ -16,7 +18,8 @@ First, open up a terminal and go to the root directory of the application (where
 7. Click "Google" tab and then click Enable.
 8. Enter in your email in the "Support email for project" input field.
 9. In your root directory, create a file called ".env.local" and in it add a line for "GOOGLE_CLIENT_ID=" and "GOOGLE_CLIENT_SECRET=".
-10. Return to Firebase and click on "Web SDK configuration".
+10. Return to Firebase and click the Save button to save the provider.
+10.5. Next, click on the edit icon for the Google row tab on the right and then click on "Web SDK configuration".
 11. Copy the Web client ID and paste it after "GOOGLE_CLIENT_ID=" in your .env.local file.
 12. Copy the Web client secret and paste it after "GOOGLE_CLIENT_SECRET=" in your .env.local file.
 13. On the 3rd and 4th lines in your .env.local file, add "NEXTAUTH_URL=http://localhost:3000" and then "NEXTAUTH_SECRET=" (add in your own secret value after the equal sign).
@@ -26,7 +29,7 @@ First, open up a terminal and go to the root directory of the application (where
 17. Click on the Web client link under "OAuth 2.0 Client IDs".
 18. Under "Authorised JavaScript origins", add the URI "http://localhost:3000".
 19. Under "Authorised redirect URIs", add the URI "http://localhost:3000/api/auth/callback/google".
-20. 
+
 
 ## Step C: Run Server
 
